@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://cxf.apache.org/jaxrs
+http://cxf.apache.org/schemas/jaxrs.xsd">
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations"><value>classpath:edsa.properties</value></property>
+	</bean>
+
+	<bean id="log4jInitialization"
+		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+		<property name="targetMethod" value="initLogging" />
+		<property name="arguments"><list><value>classpath:edsa-log4j.properties</value></list></property>
+	</bean>
+	
+	<bean id="dBService" class="com.contactual.edsa.internal.db.DBService" scope="singleton">
+		<constructor-arg type="java.lang.String"><value>${User_Name}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Password}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Default_Max_Idle}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Default_Max_Active}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Default_Max_Wait}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Default_Initial_Limit}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${URL}</value></constructor-arg>
+	</bean>
+
+	<bean id="agentInfoServiceImpl" class="com.contactual.edsa.internal.service.AgentInfoServiceImpl" scope="singleton">
+		<constructor-arg type="java.lang.String"><value>${Initial_Context_Factory}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Provider_URL}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Security_Principal}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Security_Credential}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Security_Authentication}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Split_String}</value></constructor-arg>
+	</bean>
+	
+	<bean id="tenantInfoServiceImpl" class="com.contactual.edsa.internal.service.TenantInfoServiceImpl" scope="singleton">
+		<constructor-arg><ref bean="dBService"/></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Initial_Context_Factory}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Provider_URL}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Security_Principal}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Security_Credential}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Security_Authentication}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Crm_Login_Id_Property}</value></constructor-arg>
+		<constructor-arg type="java.lang.String"><value>${Crm_Login_Password_Property}</value></constructor-arg>
+	</bean>
+
+	<bean id="salesForceSOAPClient" class="com.contactual.edsa.rest.service.crm.sf.SalesForceSOAPClient" scope="singleton">
+		<property name="clientId"><value>${ClientId}</value></property>
+		<property name="timeout"><value>${Timeout}</value></property>
+		<property name="queryBatchSize"><value>${BatchSize}</value></property>
+	</bean>
+	
+	<bean id="cRMSessionCache" class="com.contactual.edsa.rest.service.crm.cache.CRMSessionCache" scope="singleton">
+		<property name="ttl"><value>${Timeout}</value></property>
+		<property name="ato"><value>${Default_Access_Timeout}</value></property>
+		<property name="tiv"><value>${Default_Timer_Interval}</value></property>
+		<property name="mcq"><value>${Max_Cached_Quantity}</value></property>
+	</bean>
+	
+	<bean id="salesForceCRMSessionManager" class="com.contactual.edsa.rest.service.crm.sf.session.SalesForceCRMSessionManager" scope="singleton">
+		<property name="salesForceSOAPClient" ref="salesForceSOAPClient" />
+		<property name="agentInfoService" ref="agentInfoServiceImpl" />
+		<property name="tenantInfoService" ref="tenantInfoServiceImpl" />
+		<property name="cRMSessionCache" ref="cRMSessionCache" />
+	</bean>
+
+	<bean id="sFSOAPCRMService" class="com.contactual.edsa.rest.service.crm.SFSOAPCRMService">
+		<property name="cRMSessionManager" ref="salesForceCRMSessionManager" />
+	</bean>
+	
+	<bean id="eDSARequestValidator" class="com.contactual.edsa.rest.service.validator.EDSARequestValidator">
+		<property name="agentIdSplitCharacter"><value>${Split_String}</value></property>
+	</bean>
+	
+	<bean id="wAPIClient" class="com.contactual.edsa.rest.service.crm.wapi.WAPIClient" scope="singleton">
+		<constructor-arg type="java.lang.String"><value>${WAPI_URL}</value></constructor-arg>
+	</bean>
+	
+	<bean id="wAPICRMSessionManager" class="com.contactual.edsa.rest.service.crm.wapi.session.WAPICRMSessionManager" scope="singleton">
+		<property name="wAPIClient" ref="wAPIClient" />
+		<property name="tenantInfoService" ref="tenantInfoServiceImpl" />
+		<property name="cRMSessionCache" ref="cRMSessionCache" />
+	</bean>
+	
+	<bean id="wAPICRMService" class="com.contactual.edsa.rest.service.crm.WAPICRMService">
+		<property name="wAPICRMSessionManager" ref="wAPICRMSessionManager" />
+		<property name="wAPIClient" ref="wAPIClient" />
+		<property name="splitString"><value>${Split_String}</value></property>
+	</bean>
+
+	<bean id="nSSOAPCRMService" class="com.contactual.edsa.rest.service.crm.NSSOAPCRMService">
+	</bean>
+
+	<bean id="cRMServiceFactory" class="com.contactual.edsa.rest.service.crm.factory.CRMServiceFactory" scope="singleton">
+		<property name="agentInfoService" ref="agentInfoServiceImpl" />
+		<property name="tenantInfoService" ref="tenantInfoServiceImpl" />
+		<property name="cRMSessionCache" ref="cRMSessionCache" />
+	</bean>
+
+	<bean id="eDSAExceptionMapper" class="com.contactual.edsa.exception.EDSAExceptionMapper" />
+	
+	<bean id="cRMSessionService" class="com.contactual.edsa.rest.service.CRMSessionService">
+		<property name="cRMSessionManager" ref="salesForceCRMSessionManager" />
+	</bean>
+	
+	<bean id="genericObjectService" class="com.contactual.edsa.rest.service.GenericObjectService">
+		<property name="cRMServiceFactory" ref="cRMServiceFactory" />
+		<property name="eDSARequestValidator" ref="eDSARequestValidator" />
+	</bean>
+
+	<jaxrs:server id="edsa" address="/">
+		<jaxrs:serviceBeans>
+			<ref bean="genericObjectService" />
+			<ref bean="cRMSessionService" />
+		</jaxrs:serviceBeans>
+		<jaxrs:providers>
+			<ref bean="eDSAExceptionMapper" />
+		</jaxrs:providers>
+	</jaxrs:server>
+</beans>

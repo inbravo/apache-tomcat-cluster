@@ -1,0 +1,395 @@
+Starting the Apache2.2 service
+The Apache2.2 service is running.
+] Apache/2.2.16 (Win32) configured -- resuming normal operations
+[Fri Oct 08 16:11:31 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 08 16:11:31 2010] [notice] Parent: Created child process 2852
+[Fri Oct 08 16:11:31 2010] [notice] Child 2852: Child process is running
+[Fri Oct 08 16:11:31 2010] [notice] Child 2852: Acquired the start mutex.
+[Fri Oct 08 16:11:31 2010] [notice] Child 2852: Starting 64 worker threads.
+[Fri Oct 08 16:11:31 2010] [notice] Child 2852: Starting thread to listen on port 80.
+[Fri Oct 08 16:36:38 2010] [notice] Parent: Received restart signal -- Restarting the server.
+[Fri Oct 08 16:36:38 2010] [notice] Child 2852: Exit event signaled. Child process is ending.
+httpd.exe: Syntax error on line 486 of C:/opensource/cluster/apache/conf/httpd.conf: Cannot load C:/opensource/cluster/apache/modules/mod_jk-1.2.28-httpd-2.2.3.so into server: The specified module could not be found.  
+[Fri Oct 08 16:36:39 2010] [notice] Child 2852: Released the start mutex
+[Fri Oct 08 16:36:40 2010] [notice] Child 2852: All worker threads have exited.
+[Fri Oct 08 16:36:40 2010] [notice] Child 2852: Child process is exiting
+[Fri Oct 08 16:38:27 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Oct 08 16:38:27 2010] [notice] Apache/2.2.16 (Win32) configured -- resuming normal operations
+[Fri Oct 08 16:38:27 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 08 16:38:27 2010] [notice] Parent: Created child process 428
+[Fri Oct 08 16:38:27 2010] [notice] Child 428: Child process is running
+[Fri Oct 08 16:38:27 2010] [notice] Child 428: Acquired the start mutex.
+[Fri Oct 08 16:38:27 2010] [notice] Child 428: Starting 64 worker threads.
+[Fri Oct 08 16:38:27 2010] [notice] Child 428: Starting thread to listen on port 80.
+[Fri Oct 08 16:38:34 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 08 16:38:34 2010] [notice] Child 428: Exit event signaled. Child process is ending.
+[Fri Oct 08 16:38:35 2010] [notice] Child 428: Released the start mutex
+[Fri Oct 08 16:38:36 2010] [notice] Child 428: All worker threads have exited.
+[Fri Oct 08 16:38:36 2010] [notice] Child 428: Child process is exiting
+[Fri Oct 08 16:38:36 2010] [notice] Parent: Child process exited successfully.
+[Fri Oct 08 16:39:20 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Fri Oct 08 16:39:20 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 08 16:39:20 2010] [notice] Parent: Created child process 452
+[Fri Oct 08 16:39:20 2010] [notice] Child 452: Child process is running
+[Fri Oct 08 16:39:20 2010] [notice] Child 452: Acquired the start mutex.
+[Fri Oct 08 16:39:20 2010] [notice] Child 452: Starting 64 worker threads.
+[Fri Oct 08 16:39:20 2010] [notice] Child 452: Starting thread to listen on port 80.
+[Fri Oct 08 16:39:27 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/Helloworld, referer: http://vinaytechs.blogspot.com/2010/01/load-balancing-clustering-with-tomcat.html
+[Fri Oct 08 16:40:56 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/Helloworld, referer: http://vinaytechs.blogspot.com/2010/01/load-balancing-clustering-with-tomcat.html
+[Fri Oct 08 16:41:21 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/Helloworld, referer: http://vinaytechs.blogspot.com/2010/01/load-balancing-clustering-with-tomcat.html
+[Fri Oct 08 16:58:41 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 08 16:58:41 2010] [notice] Child 452: Exit event signaled. Child process is ending.
+[Fri Oct 08 16:58:42 2010] [notice] Child 452: Released the start mutex
+[Fri Oct 08 16:58:43 2010] [notice] Child 452: All worker threads have exited.
+[Fri Oct 08 16:58:43 2010] [notice] Child 452: Child process is exiting
+[Fri Oct 08 16:58:43 2010] [notice] Parent: Child process exited successfully.
+[Fri Oct 08 16:58:45 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Fri Oct 08 16:58:45 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 08 16:58:45 2010] [notice] Parent: Created child process 5428
+[Fri Oct 08 16:58:45 2010] [notice] Child 5428: Child process is running
+[Fri Oct 08 16:58:45 2010] [notice] Child 5428: Acquired the start mutex.
+[Fri Oct 08 16:58:45 2010] [notice] Child 5428: Starting 64 worker threads.
+[Fri Oct 08 16:58:45 2010] [notice] Child 5428: Starting thread to listen on port 80.
+[Fri Oct 08 17:05:30 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/edsa
+[Fri Oct 08 17:09:59 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/edsa
+[Fri Oct 08 17:10:31 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 08 17:10:31 2010] [notice] Child 5428: Exit event signaled. Child process is ending.
+[Fri Oct 08 17:10:32 2010] [notice] Child 5428: Released the start mutex
+[Fri Oct 08 17:10:33 2010] [notice] Child 5428: All worker threads have exited.
+[Fri Oct 08 17:10:33 2010] [notice] Child 5428: Child process is exiting
+[Fri Oct 08 17:10:33 2010] [notice] Parent: Child process exited successfully.
+[Fri Oct 08 17:10:36 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Fri Oct 08 17:10:36 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 08 17:10:36 2010] [notice] Parent: Created child process 5164
+[Fri Oct 08 17:10:36 2010] [notice] Child 5164: Child process is running
+[Fri Oct 08 17:10:36 2010] [notice] Child 5164: Acquired the start mutex.
+[Fri Oct 08 17:10:36 2010] [notice] Child 5164: Starting 64 worker threads.
+[Fri Oct 08 17:10:36 2010] [notice] Child 5164: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 01:48:21 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Oct 09 01:48:21 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 09 01:48:21 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 09 01:48:21 2010] [notice] Parent: Created child process 1272
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 01:48:21 2010] [notice] Child 1272: Child process is running
+[Sat Oct 09 01:48:21 2010] [notice] Child 1272: Acquired the start mutex.
+[Sat Oct 09 01:48:21 2010] [notice] Child 1272: Starting 64 worker threads.
+[Sat Oct 09 01:48:21 2010] [notice] Child 1272: Starting thread to listen on port 80.
+[Sat Oct 09 02:14:39 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Sat Oct 09 02:14:39 2010] [notice] Child 1272: Exit event signaled. Child process is ending.
+[Sat Oct 09 02:14:40 2010] [notice] Child 1272: Released the start mutex
+[Sat Oct 09 02:14:41 2010] [notice] Child 1272: All worker threads have exited.
+[Sat Oct 09 02:14:41 2010] [notice] Child 1272: Child process is exiting
+[Sat Oct 09 02:14:41 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 11:18:12 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 09 11:18:12 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 09 11:18:12 2010] [notice] Parent: Created child process 2096
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 11:18:14 2010] [notice] Child 2096: Child process is running
+[Sat Oct 09 11:18:14 2010] [notice] Child 2096: Acquired the start mutex.
+[Sat Oct 09 11:18:14 2010] [notice] Child 2096: Starting 64 worker threads.
+[Sat Oct 09 11:18:14 2010] [notice] Child 2096: Starting thread to listen on port 80.
+[Sat Oct 09 12:05:43 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Sat Oct 09 12:05:43 2010] [notice] Child 2096: Exit event signaled. Child process is ending.
+[Sat Oct 09 12:05:44 2010] [notice] Child 2096: Released the start mutex
+[Sat Oct 09 12:05:45 2010] [notice] Child 2096: All worker threads have exited.
+[Sat Oct 09 12:05:45 2010] [notice] Child 2096: Child process is exiting
+[Sat Oct 09 12:05:45 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 14:08:55 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 09 14:08:55 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 09 14:08:55 2010] [notice] Parent: Created child process 1688
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 14:08:59 2010] [notice] Child 1688: Child process is running
+[Sat Oct 09 14:08:59 2010] [notice] Child 1688: Acquired the start mutex.
+[Sat Oct 09 14:08:59 2010] [notice] Child 1688: Starting 64 worker threads.
+[Sat Oct 09 14:08:59 2010] [notice] Child 1688: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 18:50:42 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Oct 09 18:50:43 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 09 18:50:43 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 09 18:50:43 2010] [notice] Parent: Created child process 116
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 18:50:45 2010] [notice] Child 116: Child process is running
+[Sat Oct 09 18:50:45 2010] [notice] Child 116: Acquired the start mutex.
+[Sat Oct 09 18:50:45 2010] [notice] Child 116: Starting 64 worker threads.
+[Sat Oct 09 18:50:45 2010] [notice] Child 116: Starting thread to listen on port 80.
+[Sat Oct 09 18:52:12 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Sat Oct 09 18:52:12 2010] [notice] Child 116: Exit event signaled. Child process is ending.
+[Sat Oct 09 18:52:13 2010] [notice] Child 116: Released the start mutex
+[Sat Oct 09 18:52:14 2010] [notice] Child 116: All worker threads have exited.
+[Sat Oct 09 18:52:14 2010] [notice] Child 116: Child process is exiting
+[Sat Oct 09 18:52:14 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 21:16:57 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 09 21:16:57 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 09 21:16:57 2010] [notice] Parent: Created child process 1836
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 21:17:00 2010] [notice] Child 1836: Child process is running
+[Sat Oct 09 21:17:00 2010] [notice] Child 1836: Acquired the start mutex.
+[Sat Oct 09 21:17:00 2010] [notice] Child 1836: Starting 64 worker threads.
+[Sat Oct 09 21:17:00 2010] [notice] Child 1836: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 22:06:25 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Oct 09 22:06:25 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 09 22:06:25 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 09 22:06:25 2010] [notice] Parent: Created child process 648
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 09 22:06:26 2010] [notice] Child 648: Child process is running
+[Sat Oct 09 22:06:26 2010] [notice] Child 648: Acquired the start mutex.
+[Sat Oct 09 22:06:26 2010] [notice] Child 648: Starting 64 worker threads.
+[Sat Oct 09 22:06:26 2010] [notice] Child 648: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sun Oct 10 00:11:04 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Oct 10 00:11:05 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sun Oct 10 00:11:05 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sun Oct 10 00:11:05 2010] [notice] Parent: Created child process 1328
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sun Oct 10 00:11:08 2010] [notice] Child 1328: Child process is running
+[Sun Oct 10 00:11:08 2010] [notice] Child 1328: Acquired the start mutex.
+[Sun Oct 10 00:11:08 2010] [notice] Child 1328: Starting 64 worker threads.
+[Sun Oct 10 00:11:08 2010] [notice] Child 1328: Starting thread to listen on port 80.
+[Sun Oct 10 01:10:45 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/collect.jsp, referer: http://www.contactual.com/
+[Sun Oct 10 01:10:57 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/collect.jsp, referer: http://www.contactual.com/en/AboutUs
+[Sun Oct 10 01:11:07 2010] [error] [client 127.0.0.1] File does not exist: C:/opensource/cluster/apache/htdocs/collect.jsp, referer: http://www.contactual.com/en/AboutUs/ContactUs
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sun Oct 10 02:02:04 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Oct 10 02:02:05 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sun Oct 10 02:02:05 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sun Oct 10 02:02:05 2010] [notice] Parent: Created child process 556
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sun Oct 10 02:02:09 2010] [notice] Child 556: Child process is running
+[Sun Oct 10 02:02:09 2010] [notice] Child 556: Acquired the start mutex.
+[Sun Oct 10 02:02:09 2010] [notice] Child 556: Starting 64 worker threads.
+[Sun Oct 10 02:02:09 2010] [notice] Child 556: Starting thread to listen on port 80.
+[Mon Oct 11 11:07:08 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Oct 11 11:07:08 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Mon Oct 11 11:07:08 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Mon Oct 11 11:07:08 2010] [notice] Parent: Created child process 1560
+[Mon Oct 11 11:07:09 2010] [notice] Child 1560: Child process is running
+[Mon Oct 11 11:07:09 2010] [notice] Child 1560: Acquired the start mutex.
+[Mon Oct 11 11:07:09 2010] [notice] Child 1560: Starting 64 worker threads.
+[Mon Oct 11 11:07:09 2010] [notice] Child 1560: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Tue Oct 12 00:35:42 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Oct 12 00:35:42 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Tue Oct 12 00:35:42 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Tue Oct 12 00:35:42 2010] [notice] Parent: Created child process 160
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Tue Oct 12 00:35:43 2010] [notice] Child 160: Child process is running
+[Tue Oct 12 00:35:43 2010] [notice] Child 160: Acquired the start mutex.
+[Tue Oct 12 00:35:43 2010] [notice] Child 160: Starting 64 worker threads.
+[Tue Oct 12 00:35:43 2010] [notice] Child 160: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Tue Oct 12 09:36:06 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Oct 12 09:36:07 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Tue Oct 12 09:36:07 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Tue Oct 12 09:36:07 2010] [notice] Parent: Created child process 364
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Tue Oct 12 09:36:14 2010] [notice] Child 364: Child process is running
+[Tue Oct 12 09:36:14 2010] [notice] Child 364: Acquired the start mutex.
+[Tue Oct 12 09:36:14 2010] [notice] Child 364: Starting 64 worker threads.
+[Tue Oct 12 09:36:14 2010] [notice] Child 364: Starting thread to listen on port 80.
+[Tue Oct 12 10:36:07 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Tue Oct 12 10:36:08 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Tue Oct 12 10:36:08 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Tue Oct 12 10:36:08 2010] [notice] Parent: Created child process 656
+[Tue Oct 12 10:36:08 2010] [notice] Child 656: Child process is running
+[Tue Oct 12 10:36:08 2010] [notice] Child 656: Acquired the start mutex.
+[Tue Oct 12 10:36:08 2010] [notice] Child 656: Starting 64 worker threads.
+[Tue Oct 12 10:36:08 2010] [notice] Child 656: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Wed Oct 13 00:38:39 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Oct 13 00:38:39 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Wed Oct 13 00:38:39 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Wed Oct 13 00:38:39 2010] [notice] Parent: Created child process 1908
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Wed Oct 13 00:38:40 2010] [notice] Child 1908: Child process is running
+[Wed Oct 13 00:38:40 2010] [notice] Child 1908: Acquired the start mutex.
+[Wed Oct 13 00:38:40 2010] [notice] Child 1908: Starting 64 worker threads.
+[Wed Oct 13 00:38:40 2010] [notice] Child 1908: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 169.254.252.243 for ServerName
+[Wed Oct 13 10:54:31 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Oct 13 10:54:31 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Wed Oct 13 10:54:31 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Wed Oct 13 10:54:31 2010] [notice] Parent: Created child process 3988
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 169.254.252.243 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 169.254.252.243 for ServerName
+[Wed Oct 13 10:54:41 2010] [notice] Child 3988: Child process is running
+[Wed Oct 13 10:54:41 2010] [notice] Child 3988: Acquired the start mutex.
+[Wed Oct 13 10:54:41 2010] [notice] Child 3988: Starting 64 worker threads.
+[Wed Oct 13 10:54:41 2010] [notice] Child 3988: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 00:43:13 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Oct 14 00:43:14 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Thu Oct 14 00:43:14 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Thu Oct 14 00:43:14 2010] [notice] Parent: Created child process 1344
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 00:43:15 2010] [notice] Child 1344: Child process is running
+[Thu Oct 14 00:43:15 2010] [notice] Child 1344: Acquired the start mutex.
+[Thu Oct 14 00:43:15 2010] [notice] Child 1344: Starting 64 worker threads.
+[Thu Oct 14 00:43:15 2010] [notice] Child 1344: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 09:27:00 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Oct 14 09:27:00 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Thu Oct 14 09:27:00 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Thu Oct 14 09:27:00 2010] [notice] Parent: Created child process 1796
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 09:27:02 2010] [notice] Child 1796: Child process is running
+[Thu Oct 14 09:27:02 2010] [notice] Child 1796: Acquired the start mutex.
+[Thu Oct 14 09:27:02 2010] [notice] Child 1796: Starting 64 worker threads.
+[Thu Oct 14 09:27:02 2010] [notice] Child 1796: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 10:57:52 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Oct 14 10:57:52 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Thu Oct 14 10:57:52 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Thu Oct 14 10:57:53 2010] [notice] Parent: Created child process 1476
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 10:57:55 2010] [notice] Child 1476: Child process is running
+[Thu Oct 14 10:57:55 2010] [notice] Child 1476: Acquired the start mutex.
+[Thu Oct 14 10:57:55 2010] [notice] Child 1476: Starting 64 worker threads.
+[Thu Oct 14 10:57:55 2010] [notice] Child 1476: Starting thread to listen on port 80.
+[Thu Oct 14 12:43:22 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Oct 14 12:43:22 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Thu Oct 14 12:43:22 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Thu Oct 14 12:43:22 2010] [notice] Parent: Created child process 1548
+[Thu Oct 14 12:43:23 2010] [notice] Child 1548: Child process is running
+[Thu Oct 14 12:43:23 2010] [notice] Child 1548: Acquired the start mutex.
+[Thu Oct 14 12:43:23 2010] [notice] Child 1548: Starting 64 worker threads.
+[Thu Oct 14 12:43:23 2010] [notice] Child 1548: Starting thread to listen on port 80.
+[Thu Oct 14 14:08:44 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Oct 14 14:08:44 2010] [notice] Child 1548: Exit event signaled. Child process is ending.
+[Thu Oct 14 14:08:45 2010] [notice] Child 1548: Released the start mutex
+[Thu Oct 14 14:08:46 2010] [notice] Child 1548: All worker threads have exited.
+[Thu Oct 14 14:08:46 2010] [notice] Child 1548: Child process is exiting
+[Thu Oct 14 14:08:46 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 23:08:54 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Thu Oct 14 23:08:54 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Thu Oct 14 23:08:54 2010] [notice] Parent: Created child process 660
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Thu Oct 14 23:08:56 2010] [notice] Child 660: Child process is running
+[Thu Oct 14 23:08:56 2010] [notice] Child 660: Acquired the start mutex.
+[Thu Oct 14 23:08:56 2010] [notice] Child 660: Starting 64 worker threads.
+[Thu Oct 14 23:08:56 2010] [notice] Child 660: Starting thread to listen on port 80.
+[Thu Oct 14 23:09:52 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Thu Oct 14 23:09:52 2010] [notice] Child 660: Exit event signaled. Child process is ending.
+[Thu Oct 14 23:09:53 2010] [notice] Child 660: Released the start mutex
+[Thu Oct 14 23:09:54 2010] [notice] Child 660: All worker threads have exited.
+[Thu Oct 14 23:09:54 2010] [notice] Child 660: Child process is exiting
+[Thu Oct 14 23:09:54 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Fri Oct 15 00:42:19 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Fri Oct 15 00:42:19 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 15 00:42:19 2010] [notice] Parent: Created child process 1604
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Fri Oct 15 00:42:26 2010] [notice] Child 1604: Child process is running
+[Fri Oct 15 00:42:26 2010] [notice] Child 1604: Acquired the start mutex.
+[Fri Oct 15 00:42:26 2010] [notice] Child 1604: Starting 64 worker threads.
+[Fri Oct 15 00:42:26 2010] [notice] Child 1604: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Fri Oct 15 09:23:30 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Oct 15 09:23:31 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Fri Oct 15 09:23:31 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 15 09:23:31 2010] [notice] Parent: Created child process 1584
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Fri Oct 15 09:23:33 2010] [notice] Child 1584: Child process is running
+[Fri Oct 15 09:23:33 2010] [notice] Child 1584: Acquired the start mutex.
+[Fri Oct 15 09:23:33 2010] [notice] Child 1584: Starting 64 worker threads.
+[Fri Oct 15 09:23:33 2010] [notice] Child 1584: Starting thread to listen on port 80.
+[Fri Oct 15 09:24:11 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 15 09:24:11 2010] [notice] Child 1584: Exit event signaled. Child process is ending.
+[Fri Oct 15 09:24:12 2010] [notice] Child 1584: Released the start mutex
+[Fri Oct 15 09:24:13 2010] [notice] Child 1584: All worker threads have exited.
+[Fri Oct 15 09:24:13 2010] [notice] Child 1584: Child process is exiting
+[Fri Oct 15 09:24:13 2010] [notice] Parent: Child process exited successfully.
+[Fri Oct 15 11:38:43 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Fri Oct 15 11:38:43 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 15 11:38:43 2010] [notice] Parent: Created child process 1708
+[Fri Oct 15 11:38:44 2010] [notice] Child 1708: Child process is running
+[Fri Oct 15 11:38:44 2010] [notice] Child 1708: Acquired the start mutex.
+[Fri Oct 15 11:38:44 2010] [notice] Child 1708: Starting 64 worker threads.
+[Fri Oct 15 11:38:44 2010] [notice] Child 1708: Starting thread to listen on port 80.
+[Fri Oct 15 11:42:43 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 15 11:42:43 2010] [notice] Child 1708: Exit event signaled. Child process is ending.
+[Fri Oct 15 11:42:44 2010] [notice] Child 1708: Released the start mutex
+[Fri Oct 15 11:42:45 2010] [notice] Child 1708: All worker threads have exited.
+[Fri Oct 15 11:42:45 2010] [notice] Child 1708: Child process is exiting
+[Fri Oct 15 11:42:45 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Fri Oct 15 23:50:56 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Fri Oct 15 23:50:56 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Fri Oct 15 23:50:56 2010] [notice] Parent: Created child process 1292
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Fri Oct 15 23:50:57 2010] [notice] Child 1292: Child process is running
+[Fri Oct 15 23:50:57 2010] [notice] Child 1292: Acquired the start mutex.
+[Fri Oct 15 23:50:57 2010] [notice] Child 1292: Starting 64 worker threads.
+[Fri Oct 15 23:50:57 2010] [notice] Child 1292: Starting thread to listen on port 80.
+[Fri Oct 15 23:51:23 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 15 23:51:23 2010] [notice] Child 1292: Exit event signaled. Child process is ending.
+[Fri Oct 15 23:51:24 2010] [notice] Child 1292: Released the start mutex
+[Fri Oct 15 23:51:25 2010] [notice] Child 1292: All worker threads have exited.
+[Fri Oct 15 23:51:25 2010] [notice] Child 1292: Child process is exiting
+[Fri Oct 15 23:51:25 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 16 01:41:57 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 16 01:41:57 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 16 01:41:57 2010] [notice] Parent: Created child process 1388
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 16 01:42:00 2010] [notice] Child 1388: Child process is running
+[Sat Oct 16 01:42:00 2010] [notice] Child 1388: Acquired the start mutex.
+[Sat Oct 16 01:42:00 2010] [notice] Child 1388: Starting 64 worker threads.
+[Sat Oct 16 01:42:00 2010] [notice] Child 1388: Starting thread to listen on port 80.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 16 18:29:46 2010] [warn] pid file C:/opensource/cluster/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sat Oct 16 18:29:47 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 16 18:29:47 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 16 18:29:47 2010] [notice] Parent: Created child process 1128
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 16 18:29:50 2010] [notice] Child 1128: Child process is running
+[Sat Oct 16 18:29:50 2010] [notice] Child 1128: Acquired the start mutex.
+[Sat Oct 16 18:29:50 2010] [notice] Child 1128: Starting 64 worker threads.
+[Sat Oct 16 18:29:50 2010] [notice] Child 1128: Starting thread to listen on port 80.
+[Sat Oct 16 18:30:38 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Sat Oct 16 18:30:38 2010] [notice] Child 1128: Exit event signaled. Child process is ending.
+[Sat Oct 16 18:30:39 2010] [notice] Child 1128: Released the start mutex
+[Sat Oct 16 18:30:40 2010] [notice] Child 1128: All worker threads have exited.
+[Sat Oct 16 18:30:40 2010] [notice] Child 1128: Child process is exiting
+[Sat Oct 16 18:30:40 2010] [notice] Parent: Child process exited successfully.
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 16 21:29:51 2010] [notice] Apache/2.2.16 (Win32) mod_jk/1.2.30 configured -- resuming normal operations
+[Sat Oct 16 21:29:51 2010] [notice] Server built: Jul 30 2010 16:15:37
+[Sat Oct 16 21:29:51 2010] [notice] Parent: Created child process 916
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+httpd.exe: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
+[Sat Oct 16 21:29:57 2010] [notice] Child 916: Child process is running
+[Sat Oct 16 21:29:57 2010] [notice] Child 916: Acquired the start mutex.
+[Sat Oct 16 21:29:57 2010] [notice] Child 916: Starting 64 worker threads.
+[Sat Oct 16 21:29:57 2010] [notice] Child 916: Starting thread to listen on port 80.
+[Sat Oct 16 21:31:02 2010] [notice] Parent: Received shutdown signal -- Shutting down the server.
+[Sat Oct 16 21:31:02 2010] [notice] Child 916: Exit event signaled. Child process is ending.
+[Sat Oct 16 21:31:03 2010] [notice] Child 916: Released the start mutex
+[Sat Oct 16 21:31:04 2010] [notice] Child 916: All worker threads have exited.
+[Sat Oct 16 21:31:04 2010] [notice] Child 916: Child process is exiting
+[Sat Oct 16 21:31:04 2010] [notice] Parent: Child process exited successfully.

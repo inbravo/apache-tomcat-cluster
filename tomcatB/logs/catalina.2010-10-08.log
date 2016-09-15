@@ -1,0 +1,354 @@
+Oct 8, 2010 4:40:54 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\opensource\jdk1.6.0_14\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Windows Imaging\;C:\opensource\apache-ant-1.7.0;C:\Program Files\TortoiseSVN\bin;C:\opensource\jdk1.6.0_14\bin;C:\Documents and Settings\amit.dixit\Desktop\tools
+Oct 8, 2010 4:40:55 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 4:40:55 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1062 ms
+Oct 8, 2010 4:40:55 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 8, 2010 4:40:55 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.16
+Oct 8, 2010 4:40:55 PM org.apache.catalina.ha.tcp.SimpleTcpCluster start
+INFO: Cluster is about to start
+Oct 8, 2010 4:40:55 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFO: Receiver Server Socket bound to:/192.168.148.85:4002
+Oct 8, 2010 4:40:55 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFO: Setting cluster mcast soTimeout to 500
+Oct 8, 2010 4:40:55 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Oct 8, 2010 4:40:55 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4001,{-64, -88, -108, 85},4001, alive=5503,id={-125 -55 97 -49 -53 14 75 109 -101 94 -24 104 68 -118 76 -104 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 4:40:55 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=11053,id={-102 -111 -87 -72 53 -16 73 6 -75 -40 102 117 -39 82 84 -61 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 4:40:56 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:4
+Oct 8, 2010 4:40:56 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Oct 8, 2010 4:40:56 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFO: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Oct 8, 2010 4:40:57 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:8
+Oct 8, 2010 4:40:58 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Register manager /cluster to cluster element Engine with name Catalina
+Oct 8, 2010 4:40:58 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Starting clustering manager at /cluster
+Oct 8, 2010 4:40:58 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+WARNING: Manager [localhost#/cluster], requesting session state from org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=13049,id={-102 -111 -87 -72 53 -16 73 6 -75 -40 102 117 -39 82 84 -61 }, payload={}, command={}, domain={}, ]. This operation will timeout if no session state has been received within 60 seconds.
+Oct 8, 2010 4:40:58 PM org.apache.catalina.ha.session.DeltaManager waitForSendAllSessions
+INFO: Manager [localhost#/cluster]; session state send at 10/8/10 4:40 PM received in 125 ms.
+Oct 8, 2010 4:40:58 PM org.apache.catalina.ha.session.JvmRouteBinderValve start
+INFO: JvmRouteBinderValve started
+Oct 8, 2010 4:40:58 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 4:40:58 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8209
+Oct 8, 2010 4:40:58 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/63  config=null
+Oct 8, 2010 4:40:58 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3364 ms
+Oct 8, 2010 4:54:51 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFO: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4001,{-64, -88, -108, 85},4001, alive=841643,id={-125 -55 97 -49 -53 14 75 109 -101 94 -24 104 68 -118 76 -104 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]]
+Oct 8, 2010 4:54:51 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberDisappeared
+INFO: Received member disappeared:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4001,{-64, -88, -108, 85},4001, alive=841643,id={-125 -55 97 -49 -53 14 75 109 -101 94 -24 104 68 -118 76 -104 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]
+Oct 8, 2010 4:56:04 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 4:56:05 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 8, 2010 4:56:05 PM org.apache.catalina.ha.session.JvmRouteBinderValve stop
+INFO: JvmRouteBinderValve stopped
+Oct 8, 2010 4:56:05 PM org.apache.catalina.ha.session.DeltaManager stop
+INFO: Manager [localhost#/cluster] expiring sessions upon shutdown
+Oct 8, 2010 4:56:05 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 4:56:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\opensource\jdk1.6.0_14\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Windows Imaging\;C:\opensource\apache-ant-1.7.0;C:\Program Files\TortoiseSVN\bin;C:\opensource\jdk1.6.0_14\bin;C:\Documents and Settings\amit.dixit\Desktop\tools
+Oct 8, 2010 4:56:26 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 4:56:26 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 692 ms
+Oct 8, 2010 4:56:26 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 8, 2010 4:56:26 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.16
+Oct 8, 2010 4:56:26 PM org.apache.catalina.ha.tcp.SimpleTcpCluster start
+INFO: Cluster is about to start
+Oct 8, 2010 4:56:26 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFO: Receiver Server Socket bound to:/192.168.148.85:4001
+Oct 8, 2010 4:56:26 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFO: Setting cluster mcast soTimeout to 500
+Oct 8, 2010 4:56:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Oct 8, 2010 4:56:26 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=942111,id={-102 -111 -87 -72 53 -16 73 6 -75 -40 102 117 -39 82 84 -61 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 4:56:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:4
+Oct 8, 2010 4:56:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Oct 8, 2010 4:56:27 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFO: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Oct 8, 2010 4:56:28 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:8
+Oct 8, 2010 4:56:28 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Register manager /cluster to cluster element Engine with name Catalina
+Oct 8, 2010 4:56:28 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Starting clustering manager at /cluster
+Oct 8, 2010 4:56:29 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+WARNING: Manager [localhost#/cluster], requesting session state from org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=944107,id={-102 -111 -87 -72 53 -16 73 6 -75 -40 102 117 -39 82 84 -61 }, payload={}, command={}, domain={}, ]. This operation will timeout if no session state has been received within 60 seconds.
+Oct 8, 2010 4:56:29 PM org.apache.catalina.ha.session.DeltaManager waitForSendAllSessions
+INFO: Manager [localhost#/cluster]; session state send at 10/8/10 4:56 PM received in 125 ms.
+Oct 8, 2010 4:56:29 PM org.apache.catalina.ha.session.JvmRouteBinderValve start
+INFO: JvmRouteBinderValve started
+Oct 8, 2010 4:56:29 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 4:56:29 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8209
+Oct 8, 2010 4:56:29 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/31  config=null
+Oct 8, 2010 4:56:29 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2902 ms
+Oct 8, 2010 4:57:11 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFO: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=986702,id={-102 -111 -87 -72 53 -16 73 6 -75 -40 102 117 -39 82 84 -61 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]]
+Oct 8, 2010 4:57:11 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberDisappeared
+INFO: Received member disappeared:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=986702,id={-102 -111 -87 -72 53 -16 73 6 -75 -40 102 117 -39 82 84 -61 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]
+Oct 8, 2010 4:58:52 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=1013,id={27 -65 114 11 89 -96 64 -37 -67 61 -88 -109 -103 49 39 -48 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 4:59:17 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4002,{-64, -88, -108, 85},4002, alive=1029,id={66 -16 94 -19 -79 -113 72 10 -94 69 -42 -65 -47 29 -66 -62 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 4:59:37 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 8, 2010 4:59:37 PM org.apache.catalina.ha.session.JvmRouteBinderValve stop
+INFO: JvmRouteBinderValve stopped
+Oct 8, 2010 4:59:37 PM org.apache.catalina.ha.session.DeltaManager stop
+INFO: Manager [localhost#/cluster] expiring sessions upon shutdown
+Oct 8, 2010 4:59:37 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:04:59 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\opensource\jdk1.6.0_14\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Windows Imaging\;C:\opensource\apache-ant-1.7.0;C:\Program Files\TortoiseSVN\bin;C:\opensource\jdk1.6.0_14\bin;C:\Documents and Settings\amit.dixit\Desktop\tools
+Oct 8, 2010 5:04:59 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:04:59 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 693 ms
+Oct 8, 2010 5:04:59 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 8, 2010 5:04:59 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.16
+Oct 8, 2010 5:04:59 PM org.apache.catalina.ha.tcp.SimpleTcpCluster start
+INFO: Cluster is about to start
+Oct 8, 2010 5:04:59 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFO: Receiver Server Socket bound to:/192.168.101.134:4000
+Oct 8, 2010 5:04:59 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFO: Setting cluster mcast soTimeout to 500
+Oct 8, 2010 5:04:59 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Oct 8, 2010 5:04:59 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=60521,id={89 -5 -104 -76 -107 73 69 77 -120 106 106 9 106 -36 41 -29 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 5:05:00 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:4
+Oct 8, 2010 5:05:00 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Oct 8, 2010 5:05:00 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFO: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Oct 8, 2010 5:05:01 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:8
+Oct 8, 2010 5:05:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive edsa.war
+Oct 8, 2010 5:05:07 PM org.apache.catalina.core.StandardContext addApplicationListener
+INFO: The listener "org.springframework.web.context.ContextLoaderListener" is already configured for this context. The duplicate definition has been ignored.
+Oct 8, 2010 5:05:13 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+Oct 8, 2010 5:05:13 PM org.apache.cxf.transport.servlet.CXFServlet updateContext
+INFO: Load the bus with application context
+Oct 8, 2010 5:05:13 PM org.apache.cxf.transport.servlet.AbstractCXFServlet replaceDestinationFactory
+INFO: Servlet transport factory already registered 
+Oct 8, 2010 5:05:13 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Register manager /cluster to cluster element Engine with name Catalina
+Oct 8, 2010 5:05:13 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Starting clustering manager at /cluster
+Oct 8, 2010 5:05:13 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+WARNING: Manager [localhost#/cluster], requesting session state from org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=74189,id={89 -5 -104 -76 -107 73 69 77 -120 106 106 9 106 -36 41 -29 }, payload={}, command={}, domain={}, ]. This operation will timeout if no session state has been received within 60 seconds.
+Oct 8, 2010 5:05:14 PM org.apache.catalina.ha.session.DeltaManager waitForSendAllSessions
+INFO: Manager [localhost#/cluster]; session state send at 10/8/10 5:05 PM received in 111 ms.
+Oct 8, 2010 5:05:14 PM org.apache.catalina.ha.session.JvmRouteBinderValve start
+INFO: JvmRouteBinderValve started
+Oct 8, 2010 5:05:14 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:05:14 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8209
+Oct 8, 2010 5:05:14 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/32  config=null
+Oct 8, 2010 5:05:14 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 14684 ms
+Oct 8, 2010 5:08:48 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFO: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=288677,id={89 -5 -104 -76 -107 73 69 77 -120 106 106 9 106 -36 41 -29 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]]
+Oct 8, 2010 5:08:48 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberDisappeared
+INFO: Received member disappeared:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, -108, 85}:4000,{-64, -88, -108, 85},4000, alive=288677,id={89 -5 -104 -76 -107 73 69 77 -120 106 106 9 106 -36 41 -29 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]
+Oct 8, 2010 5:08:51 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:08:52 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 8, 2010 5:08:52 PM org.apache.catalina.ha.session.JvmRouteBinderValve stop
+INFO: JvmRouteBinderValve stopped
+Oct 8, 2010 5:08:53 PM org.apache.catalina.ha.session.DeltaManager stop
+INFO: Manager [localhost#/cluster] expiring sessions upon shutdown
+Oct 8, 2010 5:08:53 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:09:25 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\opensource\jdk1.6.0_14\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Windows Imaging\;C:\opensource\apache-ant-1.7.0;C:\Program Files\TortoiseSVN\bin;C:\opensource\jdk1.6.0_14\bin;C:\Documents and Settings\amit.dixit\Desktop\tools
+Oct 8, 2010 5:09:25 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:09:25 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 642 ms
+Oct 8, 2010 5:09:25 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 8, 2010 5:09:25 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.16
+Oct 8, 2010 5:09:25 PM org.apache.catalina.ha.tcp.SimpleTcpCluster start
+INFO: Cluster is about to start
+Oct 8, 2010 5:09:25 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFO: Receiver Server Socket bound to:/192.168.101.134:4000
+Oct 8, 2010 5:09:25 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFO: Setting cluster mcast soTimeout to 500
+Oct 8, 2010 5:09:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Oct 8, 2010 5:09:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:4
+Oct 8, 2010 5:09:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Oct 8, 2010 5:09:27 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:8
+Oct 8, 2010 5:09:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive edsa.war
+Oct 8, 2010 5:09:30 PM org.apache.catalina.core.StandardContext addApplicationListener
+INFO: The listener "org.springframework.web.context.ContextLoaderListener" is already configured for this context. The duplicate definition has been ignored.
+Oct 8, 2010 5:09:30 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Register manager /edsa to cluster element Engine with name Catalina
+Oct 8, 2010 5:09:30 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Starting clustering manager at /edsa
+Oct 8, 2010 5:09:30 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+INFO: Manager [localhost#/edsa]: skipping state transfer. No members active in cluster group.
+Oct 8, 2010 5:09:33 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFO: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Oct 8, 2010 5:09:33 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=1027,id={66 113 -13 -8 -118 -29 72 -57 -82 -34 -54 99 -20 -97 20 8 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 5:09:36 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+Oct 8, 2010 5:09:36 PM org.apache.cxf.transport.servlet.CXFServlet updateContext
+INFO: Load the bus with application context
+Oct 8, 2010 5:09:36 PM org.apache.cxf.transport.servlet.AbstractCXFServlet replaceDestinationFactory
+INFO: Servlet transport factory already registered 
+Oct 8, 2010 5:09:36 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Register manager /cluster to cluster element Engine with name Catalina
+Oct 8, 2010 5:09:36 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Starting clustering manager at /cluster
+Oct 8, 2010 5:09:36 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+WARNING: Manager [localhost#/cluster], requesting session state from org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=3555,id={66 113 -13 -8 -118 -29 72 -57 -82 -34 -54 99 -20 -97 20 8 }, payload={}, command={}, domain={}, ]. This operation will timeout if no session state has been received within 60 seconds.
+Oct 8, 2010 5:10:36 PM org.apache.catalina.ha.session.DeltaManager waitForSendAllSessions
+SEVERE: Manager [localhost#/cluster]: No session state send at 10/8/10 5:09 PM received, timing out after 60,058 ms.
+Oct 8, 2010 5:10:36 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+WARNING: Manager [localhost#/cluster]: Drop message SESSION-GET-ALL inside GET_ALL_SESSIONS sync phase start date 10/8/10 5:09 PM message date 1/1/70 5:30 AM
+Oct 8, 2010 5:10:36 PM org.apache.catalina.ha.session.JvmRouteBinderValve start
+INFO: JvmRouteBinderValve started
+Oct 8, 2010 5:10:36 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:10:36 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8209
+Oct 8, 2010 5:10:36 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/47  config=null
+Oct 8, 2010 5:10:36 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 70987 ms
+Oct 8, 2010 5:12:36 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFO: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=183278,id={66 113 -13 -8 -118 -29 72 -57 -82 -34 -54 99 -20 -97 20 8 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]]
+Oct 8, 2010 5:12:36 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberDisappeared
+INFO: Received member disappeared:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=183278,id={66 113 -13 -8 -118 -29 72 -57 -82 -34 -54 99 -20 -97 20 8 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]
+Oct 8, 2010 5:13:26 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=1019,id={-34 93 -68 -99 -125 -82 78 -2 -112 -78 41 105 -107 63 -85 95 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 5:13:38 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFO: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=13834,id={-34 93 -68 -99 -125 -82 78 -2 -112 -78 41 105 -107 63 -85 95 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]]
+Oct 8, 2010 5:13:38 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberDisappeared
+INFO: Received member disappeared:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=13834,id={-34 93 -68 -99 -125 -82 78 -2 -112 -78 41 105 -107 63 -85 95 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]
+Oct 8, 2010 5:14:31 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=1018,id={-25 -18 -99 -62 64 -20 77 40 -127 76 97 -92 22 -62 -99 -7 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 5:14:48 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 8, 2010 5:14:48 PM org.apache.catalina.ha.session.JvmRouteBinderValve stop
+INFO: JvmRouteBinderValve stopped
+Oct 8, 2010 5:14:49 PM org.apache.catalina.ha.session.DeltaManager stop
+INFO: Manager [localhost#/edsa] expiring sessions upon shutdown
+Oct 8, 2010 5:14:49 PM org.apache.catalina.ha.session.DeltaManager stop
+INFO: Manager [localhost#/cluster] expiring sessions upon shutdown
+Oct 8, 2010 5:14:49 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:16:24 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\opensource\jdk1.6.0_14\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Windows Imaging\;C:\opensource\apache-ant-1.7.0;C:\Program Files\TortoiseSVN\bin;C:\opensource\jdk1.6.0_14\bin;C:\Documents and Settings\amit.dixit\Desktop\tools
+Oct 8, 2010 5:16:24 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:16:24 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 653 ms
+Oct 8, 2010 5:16:24 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Oct 8, 2010 5:16:24 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.16
+Oct 8, 2010 5:16:24 PM org.apache.catalina.ha.tcp.SimpleTcpCluster start
+INFO: Cluster is about to start
+Oct 8, 2010 5:16:24 PM org.apache.catalina.tribes.transport.ReceiverBase bind
+INFO: Receiver Server Socket bound to:/192.168.101.134:4000
+Oct 8, 2010 5:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl setupSocket
+INFO: Setting cluster mcast soTimeout to 500
+Oct 8, 2010 5:16:24 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:4
+Oct 8, 2010 5:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:4
+Oct 8, 2010 5:16:25 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Sleeping for 1000 milliseconds to establish cluster membership, start level:8
+Oct 8, 2010 5:16:26 PM org.apache.catalina.tribes.membership.McastServiceImpl waitForMembers
+INFO: Done sleeping, membership established, start level:8
+Oct 8, 2010 5:16:27 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Register manager /cluster to cluster element Engine with name Catalina
+Oct 8, 2010 5:16:27 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Starting clustering manager at /cluster
+Oct 8, 2010 5:16:27 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+INFO: Manager [localhost#/cluster]: skipping state transfer. No members active in cluster group.
+Oct 8, 2010 5:16:27 PM org.apache.catalina.tribes.io.BufferPool getBufferPool
+INFO: Created a buffer pool with max size:104857600 bytes of type:org.apache.catalina.tribes.io.BufferPool15Impl
+Oct 8, 2010 5:16:27 PM org.apache.catalina.core.StandardContext addApplicationListener
+INFO: The listener "org.springframework.web.context.ContextLoaderListener" is already configured for this context. The duplicate definition has been ignored.
+Oct 8, 2010 5:16:27 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Register manager /edsa to cluster element Engine with name Catalina
+Oct 8, 2010 5:16:27 PM org.apache.catalina.ha.session.DeltaManager start
+INFO: Starting clustering manager at /edsa
+Oct 8, 2010 5:16:27 PM org.apache.catalina.ha.session.DeltaManager getAllClusterSessions
+INFO: Manager [localhost#/edsa]: skipping state transfer. No members active in cluster group.
+Oct 8, 2010 5:16:28 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberAdded
+INFO: Replication member added:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=1015,id={-29 -128 73 35 -103 106 67 -95 -76 41 69 95 -64 -30 96 93 }, payload={}, command={}, domain={}, ]
+Oct 8, 2010 5:16:33 PM org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+Oct 8, 2010 5:16:33 PM org.apache.cxf.transport.servlet.CXFServlet updateContext
+INFO: Load the bus with application context
+Oct 8, 2010 5:16:33 PM org.apache.cxf.transport.servlet.AbstractCXFServlet replaceDestinationFactory
+INFO: Servlet transport factory already registered 
+Oct 8, 2010 5:16:33 PM org.apache.catalina.ha.session.JvmRouteBinderValve start
+INFO: JvmRouteBinderValve started
+Oct 8, 2010 5:16:33 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 5:16:33 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8209
+Oct 8, 2010 5:16:33 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/47  config=null
+Oct 8, 2010 5:16:33 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9028 ms
+Oct 8, 2010 5:17:45 PM org.apache.catalina.tribes.group.interceptors.TcpFailureDetector memberDisappeared
+INFO: Verification complete. Member disappeared[org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=78185,id={-29 -128 73 35 -103 106 67 -95 -76 41 69 95 -64 -30 96 93 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]]
+Oct 8, 2010 5:17:45 PM org.apache.catalina.ha.tcp.SimpleTcpCluster memberDisappeared
+INFO: Received member disappeared:org.apache.catalina.tribes.membership.MemberImpl[tcp://{-64, -88, 101, -122}:4001,{-64, -88, 101, -122},4001, alive=78185,id={-29 -128 73 35 -103 106 67 -95 -76 41 69 95 -64 -30 96 93 }, payload={}, command={66 65 66 89 45 65 76 69 88 ...(9)}, domain={}, ]
+Oct 8, 2010 9:50:54 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8082
+Oct 8, 2010 9:50:56 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Oct 8, 2010 9:50:56 PM org.apache.catalina.ha.session.JvmRouteBinderValve stop
+INFO: JvmRouteBinderValve stopped
+Oct 8, 2010 9:51:05 PM org.apache.catalina.ha.session.DeltaManager stop
+INFO: Manager [localhost#/edsa] expiring sessions upon shutdown
+Oct 8, 2010 9:51:08 PM org.apache.catalina.ha.session.DeltaManager stop
+INFO: Manager [localhost#/cluster] expiring sessions upon shutdown
+Oct 8, 2010 9:51:08 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8082
